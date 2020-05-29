@@ -1,0 +1,24 @@
+一、什么是弹性盒子：
+	是一个容器，设置弹性盒子的方法：
+	display:flex;
+	作用是让子内容自动适应父元素的宽或高
+二、flex-direction:row|column 
+	弹性盒子的方向，给父元素设置
+	 flex-direction:column|row
+	默认值为row水平方向分布,column是垂直方向分布
+三、justify-content属性：分布方式
+	当子内容空间小父元素时，让子内容在盒子内的分布方式
+	justify-content:space-between; 两个子内容之间有空隙一样
+	justify-content:space-around; 每个子内容周边的空隙一样
+
+
+四、align-items 对齐方式,默认为上下对齐
+	align:center  居中对齐
+	
+五、flex-wrap：是否自动换行
+	flex-wrap:wrap;换行，no-wrap不换行
+
+六、内容的弹性盒子的属性:
+	给子内容设置：order:n; 排序,n为整数,n的值越小，越排在前
+	flex-grow:1;默认值为0,设置为1让该元素自动扩大占满父元素剩余空间;
+	flex-shrink:1;默认值1,意思当子元素的空间和大于父元素时，子元素会自动缩小，如果设置flex-shrink:0为的话，相对应的子元素不缩小

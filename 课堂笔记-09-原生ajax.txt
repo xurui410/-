@@ -1,0 +1,30 @@
+一、原生ajax的实现
+	1.XMLHttpRequest()对象实例化
+	2.通过open(type,url,aynsc)方法进行对象初始化
+	3.通过send()向服务器发送请求
+	4.当服务器响应码发生变化时的回调
+		xmlhttp.onreadystatechange=function(){
+			if(xmlhttp.readystate==4 & xmlhttp.status==200)	{
+				var data=xmlhttp.responseText;
+			}
+		}
+	5.通过responseText获取数据
+
+   原生ajax的代码
+	function getajax(){
+		var xmlhttp=new XMLHttpRequest();
+		xmlhttp.open("get",url,true);
+		xmlhttp.send();
+		
+		xmlhttp.onreadystatechange=function(){
+			if(xmlhttp.readystate==4 & xmlhttp.status==200){
+				var data=xmlhttp.responseText;
+			}
+		}
+	}
+二、使用get方式请求ajax
+	在初始化时 xmlhttp.open("GET",url,true)
+
+三、使用post方式请求ajax
+
+	在初始化时 xmlhttp.open("POST",url,true)

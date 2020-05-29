@@ -1,0 +1,30 @@
+一、transform变形:
+	rotate(45deg) 旋转
+	scale(x,y)  绽放的倍，分为x方向和方向
+	skew(45deg) 变形
+
+二、transtion 过渡动画
+	transtion:css属性|all 时间;
+		时间表示方法：2s   500ms
+
+
+三、animation动画
+	@keyframes 动画名{
+		from{  css样式  }
+		to{  结束时的css样式}
+	}
+	
+	@keyframes 动画名{
+		0%{}
+		20%{}
+		50%{}
+		100%{}
+
+	}
+
+   使用动画：
+
+	选择器{
+		css样式;
+		animation:动画名 2s;
+	}

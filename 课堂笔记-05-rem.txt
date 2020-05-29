@@ -1,0 +1,18 @@
+一、rem的介绍
+	什么是rem,是相对单位,px是绝对单位,rem是html标记的字体大小的缩放比例
+	1rem等于多少px是由html标记的字体大小来决定，比如：html的font-size:50px,
+	1rem=50px,如果html的font-size是100px 那1rem=100px;
+
+	em:也是相对单位，相对于父元素的字体大小缩放比例,
+	vw:也是相对单位：相对于设备宽度的百分比   设备宽度是1000px, 1vm=10px
+	vh:也是相对单位：相对于设备的高度的百分比：设备高度是 900px  1vh=9px
+	vmin:最小百分比
+	vmax:最大百分比
+	
+二、rem在移动端的应用
+	由于移动端设备的宽度不同，通过动态改变html标记的字体大小，从而动态改变rem
+	
+	function rem(){		document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+"px";
+	}
+	rem();
+	window.onresize=rem;

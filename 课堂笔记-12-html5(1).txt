@@ -1,0 +1,66 @@
+一、新增的主体结构元素 
+	header  头部
+	section  块
+	article 文章
+	aside 侧边栏
+	footer 底部
+	dialog 对话框
+		<dialog>
+			<dt>王鹏：特别喜欢如花姑娘</dt>
+			<dd>小孟：凤姐是我的梦中的情人</dd>		
+		</dialog>
+	nav  导航 
+	mark 行内级元素 记号的文本
+
+二、html5新增加非主体结构元素
+	<canvas id="mm" width="" height=""></canvas>
+	画图
+	video 在网页中插入视频
+	audio
+
+三、新增的表单域元素
+	date 	
+	search
+		<input type="search" list="mm">
+		<datalist id=mm>
+			<option>刀削面很好吃</option>
+			<option>传说中的刀削面是用面和水做出来的</option>
+			<option>有的同学无耻的样很有年轻时的风彩</option>
+			<option>好嗨哟，感觉人生已经达到了巅峰</option>
+		</datalist>
+	color 颜色
+	range 取值范围
+	url 必须含http:// 
+	email 必须 字@字
+	number 只能是数字
+	
+	新增表单域的属性
+		placeholder 占位符
+		required 必填写
+		readonly 只读
+		disable 禁用的
+		min 最小值
+		max 最大值
+
+四、history 
+	history.back() 返回上一页
+	history.go(-1) 返回上一页
+	history.go(1)  下一页
+	history.forward() 下一页 相当于 
+
+五、拖拽
+	用到事件：
+		ondragstart 开始拖拽
+		ondragover 拖拽并滑过
+		ondragenter  拖拽进入
+		ondrop   拖拽丢弃
+		ondragleave 拖拽并离开
+	
+	给元素设置属性 dragable=true | false
+	ev.dataTransfer.setData("hh",ev.target.id)  //设置数据
+	 d=ev.dataTransfer.getData("hh") 获取数据
+	      保留数据
+	event.target    //获取当前事件的元素对象
+	event.target.id //获取当前元素对象的id值
+
+

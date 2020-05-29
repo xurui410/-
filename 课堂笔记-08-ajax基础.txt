@@ -1,0 +1,72 @@
+一、什么是ajax
+	采用javascript与xml技术进行数据交互,
+	AJAX 是一种用于创建快速动态网页的技术。
+
+通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。
+
+什么叫同步，什么叫异步？
+	当我们向服务器发送一条命令时，需要等待服务做出响应后再发送下一条命令,这样的叫同步,
+	向服务器发送一条命令，不需要等待服务器做出响应，可以直接再发送下一条命令，这样的我们称为异步.
+	
+
+二、ajax原理
+	客户端通过XMLHttpRequest向服务器发送异步请求,服务器在收到客户请求后进行处理，将处理后数据返回客户端，客户端通过javascript脚本进行页面的局面渲染
+
+
+三、ajax和传统web渲染数据的区别和优缺点
+	
+无论使用哪种开发技术，流程都是先由客户端发送HTTP请求，然后由服务器对请求生成响应。但传统的Web开发技术和Ajax技术之间还是存在很多差异的。
+
+差异1：发送请求方式不同。
+
+传统Web应用通过浏览器发送请求，而Ajax技术则是通过JavaScript的XMLHttpRequest对象。
+
+差异2：服务器响应不同。
+
+针对传统Web应用，服务器的响应是一个完整的页面，而采用Ajax技术后，服务器的响应只是需要的数据。
+
+差异3：客户端处理的响应方式不同。
+
+传统的Web应用发送请求后，浏览器将等待服务器响应完成后重新加载整个页面。而采用Ajax技术后，浏览器不再空闲等待请求的响应，而只是通过JavaScript动态更新页面中需要更新的部分。
+
+使用ajax的优缺点是什么？
+	优点：使用异步在不刷新整个页面的情况进行页面的局部更新
+
+	缺点：不利用搜索引擎的爬虫抓取，不利seo技术
+
+原生ajax的步骤:
+	1.XMLHttpRequest对象实例化
+ 	2.对象初始化
+	3.向服务器发送请求
+	4.等待服务器做响应
+		服务返回的响应码有5个
+		0:未初始化
+		1：向服务器发送请求
+		2:服务器已经接收请求
+		3:服务器正在处理请求
+		4:服务器准备就绪
+	5.获取文本数据
+	6.通过javascript进行页面渲染
+
+
+ ajax的核心是XMLHttpRequest对象,它所有属性和方法有
+	open()
+	send()
+	onreadystatechange 当响应码改变时
+	readystate
+	status
+	responseText
+原生ajax代码:
+	function getajax(){
+		var xmlhttp=new XMLHttpRequest();
+		xmlhttp.open("get","url",true);
+		xmlhttp.send();
+		xmlhttp.onreadystatechange=function(){
+			if(xmlhttp.readystate==4 &xmlhttp.status==200){
+				var data=xmlhttp.responseText;
+				docuemnt.getElementById("mm").innerHTML=data
+			}
+		}
+	}
+
+

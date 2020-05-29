@@ -1,0 +1,53 @@
+一、jquery中的ajax
+	1.$.ajax()方法 
+		$.ajax({
+			type:"GET",  //get或post方式
+			url:"请求的url网址",
+			async:true | false,
+			success:function(ret){
+				//ret为请求服务器返回的数据
+				//请求ajax成功后的js代码
+			}
+
+		})
+
+	2.$.get()
+	   
+		$.get("url",{向服务器提交的参数数据},function(ret){
+
+		},"json")	
+
+		比如：
+		$.get("http://www.abc.com/aaa.php",{uu:"李宝裤",us:"男"},function(ret){
+			
+		},"json")
+
+		相当于
+		$.ajax({
+			type:"get",
+			url:"http://www.abc.com/aaa.php?uu=李宝裤&us=男",
+			success:function(ret){
+				var ret=JSON.parse(ret)
+			}
+		})
+
+	3.$.post()
+		$.post("url",{},function(ret){    },"json")
+
+	4.$.getJSON()
+		$.getJSON("url",function(ret){
+			//ret为服务器返回的数据，并且转换为json数据格式
+		})
+
+二、jsonp:
+	什么是跨域？
+		由于javascript出于安全性考虑，同源策略，意思是不允许访问其他域名下的变量或数据，但是javascript允许使用src方式将其他域外的js加载本地来使用
+	什么是jsonp?
+		jsonp就是javascript解决跨域的一种方式,在本地定义一个函数，远程回调函数，然后通过js的src方式加载到本地，
+
+
+
+
+
+
+

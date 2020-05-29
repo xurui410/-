@@ -1,0 +1,39 @@
+一、移动端原生的touch事件
+	touchstart 开始触摸屏幕时
+	touchmove 在屏幕上滑动时
+	touchend 结束触摸
+	touchcancel 关闭触摸事件时
+二、touch事件相关的属性
+	clientX      触摸目标在浏览器中的x坐标 
+	
+	clientY      触摸目标在浏览器中的y坐标
+	pageX      触摸目标在当前DOM中的x坐标
+	pageY      触摸目标在当前DOM中的y坐标
+	screenX      触摸目标在屏幕中的x坐标
+	screenY      触摸目标在屏幕中的y坐标
+
+	获取触摸开始点的坐标方法
+		var x=event.touches[0].pageX
+		var y=event.touches[0].pageY;
+	获取触摸结束点的坐标方法
+		var x1=event.changedTouches[0].pageX;
+		var y1=event.changedTouches[0].pageY;
+
+三、zepto.js  
+	1.什么叫zepto.js,
+		zepto是针对移动端的javascript库文件，同jquery有共同的接口，完全可以使用jQuery技术手册来学习zepto;封装了一些移动的事件;
+	2.zepto和jQuery的区是什么？
+		1)库文件大小不一样,zepto是轻量级的,jQuery是重量级的
+		2)zepto是针对移动端，jQuery针对pc端
+		3)zepto抛弃了一些对低版本浏览器的支持
+		4)zepto封装了一些移动的事件,
+
+	3.zepto针对移动的事件有：
+		tap   轻击
+		longTap 长按
+		doubleTap 双击
+		swipe  滑屏
+		swipeUp 向上滑屏
+		swipeRight 向右滑屏
+		swipeDown 向下滑屏
+		swipeLeft 向左滑屏

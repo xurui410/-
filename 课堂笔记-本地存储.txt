@@ -1,0 +1,27 @@
+一、localStorage 可以长期保留在本地,sessionStorage不能长期保留
+
+	定义localStorage的方法有两种
+		localStorage.变量名=值
+		localStorage.setItem("变量名","值")
+	调用localStorage:
+		localStorage.变量名
+		localStorage.getItem("变量名")
+	遍历localStorage的方法
+	    for(var i in localStorage){
+		document.write(localStorage.getItem(i)+"<br>");
+	    }
+	清空localStorage的方法
+		localStorage.clear();
+	删除指定的localStorage方法
+		localStorage.removeItem("要删除的变量")
+  
+三、video和audio元素的属性、方法、事件
+	video是插入视频,有width和height
+	audio插入音频,支持mp3,mp4,wmv格式
+	  属性：controls 显示控件
+		autoplay 自动播放 
+		poster="图片路径"  在播放视频前显示指定图片
+	
+
+		
+

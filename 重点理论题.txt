@@ -1,0 +1,22 @@
+01、什么是sass/scss?
+	sass是css的预处理器，基于ruby语言开发;弥补了css的不足，比如css不支持变量，判断，循环，继承等，通过sass可以快速方便的管理css样式
+
+02、什么叫css预处理器?
+	通过编译后直接生成css文件，比如sass就是css的预处理器,弥补了css的不足，比如css不支持变量，判断，循环，继承等，通过sass可以快速方便的管理css样式
+
+03、举例说明什么是插值
+
+04、扩展名为.sass和.scss的区别是什么
+	sass用换行来代替了分号和大括号，不符合我们的编写习惯
+	scss是sass升级版,可以按照css方法来编写scss,更符合我们的编写习惯 
+
+05、sass和less的区别是什么？
+	1.sass是基于ruby语言开发，less是基于node.js开发
+	2.sass变量的前缀以$符号开头,less是 @ 为前缀
+	3.sass支持@if @else分支判断,而less不支持
+	4.sass支持继承，而less不支持
+	
+
+
+
+

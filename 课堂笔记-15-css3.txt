@@ -1,0 +1,61 @@
+一、属性选择器
+	选择器名[属性名]  指的是含有指定属性的选择器
+	选择器名[属性名=值] 指的是含指定属性名及值选择器
+	选择器[属性名^=字符] 指的是含指定属性的值以指定字符开头的选择器
+	选择器[属性名$=字符] 指的是含指定属性的值以指定字符结尾的选择器
+	选择器[属性名*=字符] 指的是含指定属性的值包含指定字符的选择器
+
+二、结构选择器
+	1.后代选择器
+		选择器 后代选择器{ css样式}
+	2.子代选择器
+		选择器>子代元素
+	3.第一个元素:
+		选择器:first-child{}
+		      :nth-child{}
+		      :first-of-type{}
+	4.最后一个元素 
+		  :last-child
+	5.第几个元素
+		:nth-child(n){}
+		这里的n为正整数,n从1数起
+	6.第偶数,奇数个元素:
+		:nth-child(2n){}
+		:nth-child(2n+1){}
+
+三、伪类选择器：
+
+	1.超链接的伪类选择器
+		a.类名:link{}  含类名的正常的链接的样式
+		a.类名:visited{}  被访问的超链接样式
+		a.类名:hover{}   鼠标移动超链接样式
+	2.:hover伪选择器
+		div:hover{}
+	3.:not(排除的选择器){}
+
+
+四、新增加的文本属性:
+	选择器｛text-shadow:x y length color}
+	word-break:break-word 单词强行换行
+
+	文本超出宽度显示省略号的方法:
+		选择器{
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+
+
+五、边框属性
+	设置边框背景图的方法:
+		border:solid 10px;
+		border-image:url(图片路径) x y repeat/stretch;
+六、背景属性：
+	1.多背景图设置
+		background:url(图片路径1) 是否重复 x y,url(图片路径2) 是否重复 x y,背景颜色 url(图片路径3) 是否重复 x y
+	2.设置背景图大小
+		background-size:w h,w h;
+
+
+
+
+

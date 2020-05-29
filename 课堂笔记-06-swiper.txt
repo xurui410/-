@@ -1,0 +1,42 @@
+什么叫swiper?它的作用是什么?
+	swiper是简单的，免费的，开源的js插件，它的作用主要是用来制作具有滑屏功能轮播特效;
+ swiper 共2个文件，一个是 swiper.min.css还有一个swiper.min.js
+一、swiper 初始化
+	html代码部分
+		<div class="swiper-container " id="banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">1</div>
+				<div class="swiper-slide">2</div>
+				<div class="swiper-slide">3</div>
+			</div>
+
+		</div>
+
+	js代码部分
+
+		var banner=new Swiper("#banner",{
+
+		})
+
+
+二、swiper中的常用参数 
+	autoplay:1500, //自动播放
+	speed:500,     //切换时间
+	direction:"vertical", //滑动方向
+	effect:"cube",      //切换效果
+	pagination:".swiper-pagination",  //分页器
+	paginationType:"fraction"  ,  //分页器的样式
+	nextButton:".swiper-button-next",  //下一页
+	prevButton:".swiper-button-prev",  //上一页
+	scrollbar:".swiper-scrollbar", //滚动条
+	paginationClickable:true     ,//分页器是否能单击
+	slidesPerView:5;    //每屏显示几页
+
+swiper的分页器 
+
+swiper切换效果 
+
+滚动条 
+
+
+

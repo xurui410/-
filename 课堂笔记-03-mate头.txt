@@ -1,0 +1,28 @@
+一、PC端常见的meta定义 
+	<head>
+		<mate charset="utf-8">
+		<title>全栈开发</title>
+		<mate name="keywords"  content="web前端开发,webapp开发,网页开发">
+		<mate name="description" content="我们是积云1903A班的全栈开发学员，现在正在学习webapp开发,从网页开发">
+		<mate name="author" content="黄仙">
+		
+	</head>
+
+二、移动端常见meta定义:
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+	格式检测，能不能自动识别电话和邮箱
+	<meta name="format-detection" content="telephone=no,email=no" /> 
+三、移动端viewport 
+	1,viewport 视图支持
+	2.device-width 设备
+	3.initial-scale 默认的 缩放比例
+	4.minimum-scale 最小的缩放比例
+	5.maximum-scale 最大的缩放比例
+	6.user-scalable 用户能不能缩放
+	
+四、个别机型问题:
+	<meta name="apple-mobile-web-app-capable" content="yes"/>显示苹果的工具栏
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/> 苹果状态栏变成黑色
+
